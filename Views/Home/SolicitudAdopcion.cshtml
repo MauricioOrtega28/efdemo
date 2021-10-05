@@ -6,10 +6,19 @@
 
 <h1>Formulario de adopcion</h1>
 
-<form action="post">
-    <div>
+<form method="post">
+    <div class="form-group">
         <label asp-for="NombreCompleto"></label>
         <input asp-for="NombreCompleto" class="form-control">
     </div>
+    <div class="form-group">
+        <label asp-for="Direccion"></label>
+        <input asp-for="Direccion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="DescripcionEspacio"></label>
+        <textarea asp-for="DescripcionEspacio" class="form-control"></textarea>
+    </div>
+    <button class="btn btn-primary">Enviar</button>
 </form>
 
