@@ -1,0 +1,15 @@
+@model SolicitudAdopcion
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h1>Formulario de adopcion</h1>
+
+<form action="post">
+    <div>
+        <label asp-for="NombreCompleto"></label>
+        <input asp-for="NombreCompleto" class="form-control">
+    </div>
+</form>
+
